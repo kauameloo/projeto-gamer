@@ -1,0 +1,38 @@
+/* Import de fonts */
+@font-face {
+    font-family: Inter;
+    src: url(../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(../assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Titillium_Web;
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* DESKTOP FIRST */
+
+header {
+    background-color: #1B1426;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    color: white;
+}
