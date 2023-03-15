@@ -55,6 +55,9 @@ header {
     background-color: #1b1426;
     height: 60px;
 
+    display: flex;
+    align-items: center;
+
 }
 
 header .header-top {
@@ -90,6 +93,10 @@ header .header-bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+header .logo {
+    width: 86px;
 }
 
 header .header-bottom nav {
@@ -154,7 +161,7 @@ main {
     top: 60px;
 }
 
-/* BANNER DA MAIN */
+/* MAIN BANNER */
 main .banner {
     width: 100vw;
     height: 606px;
@@ -165,44 +172,142 @@ main .banner {
 }
 
 main .banner .banner-flex {
+    height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
 
     padding-top: 10px;
 }
 
-main .banner .banner-flex .maintitle h1 {
+main .banner h1 {
     font-family: titiliumweb;
     text-shadow: 0 0 7px #FD4255;
     font-size: 40px;
 }
 
 
-main .botao-sobre {
-    width: 171px;
+main .banner a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
     height: 40px;
+    font-family: titiliumwebbold;
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+    background-color: #f9aa01;
+    border-radius: 8px;
 
+    margin-bottom: 88px;
+}
+
+
+/* SEÇÃO JOGOS POPULARES */
+main .jogos {
+
+    height: 590px;
+    background-color: #1B1426;
+
+}
+
+main .jogos-flex {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+/* SEÇÃO INFO */
+main .info {
+    height: 1535px;
+    background-color: #f9aa01;
+}
+
+main .info .info-flex {
+    height: 100%;
+}
+
+main .info-flex .info-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: #1B1426;
+    font-family: titiliumweb;
+    font-size: 15px;
+    text-transform: uppercase;
+    
+    padding-top: 82px;
+    
+
+}
+
+main .info-flex .info-title .linha {
+    width: 204px;
+    border: 1px solid #1B1426;
+
+    margin-top: 35px;
+
+}
+
+
+main .info-flex .banner-card .card {
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
-    
-    margin-top: 406px;
-    background-color: #f9aa01;
+    width: 231px;
+    height: 300px;
 
+    background-image: linear-gradient(to right bottom, rgba(122, 49, 236, 0.2), rgba(47, 7, 109, 0.83));
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);  
+    backdrop-filter: blur(45px);
     border-radius: 8px;
 }
 
-main .botao-sobre h2 {
-    font-family: titiliumwebbold;
-    font-weight: bold;
-    font-size: 24px;
-    color: black;
+main .card h2 {
+    font-family: titiliumweb;
+    font-size: 18px;
+    text-shadow: 0 0 6px #C6A5E5;
+    text-transform: uppercase;
+    padding-top: 19px;
+}
+
+main .card p {
+    width: 176px;
+
+    font-family: quicksand;
+    font-size: 13px;
+    text-align: justify;
+    padding-top: 19px;
+}
+
+.info-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 
 
+
+
+
+
+
+
+
+/* TABLETS >= 768px */
+@media screen and (min-width: 768px) {
+    
+}
 
 
 
