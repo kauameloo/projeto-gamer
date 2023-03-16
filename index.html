@@ -51,13 +51,13 @@
 
         <div class="header-bottom layout-grid">
             <!-- menu hamburger -->
-            <img onclick="mostrarMenu()" id="menu-hamburger" src="assets/icons/Vectorbars.svg"
+            <img onclick="mostrarMenu()" class="menu-hamburger" src="assets/icons/Vectorbars.svg"
                 alt="menu em barras, menu hamburger">
 
             <img class="logo" src="assets/images/logotipo-gamer.png" alt="logotipo
                     escrito gamer">
             <nav class="menu" id="menu">
-                <a href="">Início</a>
+                <a id="inicio" href="">Início</a>
                 <a href="">Jogadores</a>
                 <a href="">Equipes</a>
                 <a href="">Notícias</a>
@@ -98,7 +98,7 @@
 
 
             <!-- menu 3 pontos -->
-            <img onclick="mostrarUsuario()" id="menu-pontos" src="assets/icons/Vectorpontos.svg" alt="menu 3 pontos">
+            <img onclick="mostrarUsuario()" class="menu-pontos" src="assets/icons/Vectorpontos.svg" alt="menu 3 pontos">
 
             <div class="menu-usuario" id="menu3pt">
                 <a href="">
@@ -133,7 +133,7 @@
         <section class="banner">
             <div class="layout-grid banner-flex">
                 <h1>Liga Gamers</h1>
-                <a href="sobre">Sobre</a>
+                <a href="">Sobre</a>
             </div>
         </section>
 
@@ -152,27 +152,25 @@
                     <div class="linha"></div>
                 </div>
 
-                <div class="info-card">
-                    <div class="banner-card">
-                        <!-- <img src="assets/images/kiljoy.png" alt=""> -->
-                        <div class="card">
-                            <img class="logo-card" src="assets/images/controle.png" alt="">
-                            <h2>20 jogos diferentes</h2>
-                            <p>São mais de 20 jogos em 2 plataformas dispóniveis para que você possa aprender melhores
-                                técnicas.</p>
-                        </div>
+                <div class="banner-card">
+                    <img src="assets/images/kiljoy.png" alt="">
+                    <div class="card" id="jogos-diferentes">
+                        <img class="logo-card" src="assets/images/controle.png" alt="">
+                        <h2>20 jogos diferentes</h2>
+                        <p>São mais de 20 jogos em 2 plataformas dispóniveis para que você possa aprender melhores
+                            técnicas.</p>
                     </div>
+                </div>
 
-                    <div class="banner-card">
-                        <!-- <img src="assets/images/jinx.png" alt=""> -->
-                        <div class="card">
-                            <img class="logo-card" src="assets/images/avatar.png" alt="">
-                            <h2>53 Professores</h2>
-                            <p>Temos 53 Proplayers no nosso time para ensinar todas as es- tratégias, você vai
-                                aprender do
-                                básico ao avançado.
-                                Tempo de treinamento, des- canso, equipamentos. </p>
-                        </div>
+                <div class="banner-card">
+                    <img src="assets/images/jinx.png" alt="">
+                    <div class="card" id="professores">
+                        <img class="logo-card" src="assets/images/avatar.png" alt="">
+                        <h2>53 Professores</h2>
+                        <p>Temos 53 Proplayers no nosso time para ensinar todas as es- tratégias, você vai
+                            aprender do
+                            básico ao avançado.
+                            Tempo de treinamento, des- canso, equipamentos. </p>
                     </div>
                 </div>
             </div>

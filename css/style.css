@@ -47,20 +47,18 @@ body {
 
 header {
     position: fixed;
-
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 60px;
-
     z-index: 100;
-    background-color: #1b1426;
-    height: 60px;
+    background-color: #1B1426;
 
     display: flex;
-    align-items: center;
-
 }
 
-header .header-top {
+
+header .header-border {
     display: none;
 }
 
@@ -69,6 +67,7 @@ header .header-top {
 .mostrar-usuario {
     right: 0 !important;
 }
+
 header .menu-usuario {
     display: flex;
     flex-direction: column;
@@ -146,7 +145,7 @@ header nav .sociais {
 
 }
 
-header nav .phone,
+header nav .phone, 
 .email {
     gap: 15px;
 }
@@ -155,8 +154,7 @@ header nav .phone,
 /* MAIN */
 
 main {
-    position: absolute;
-    top: 60px;
+    margin-top: 60px;
 }
 
 /* MAIN BANNER */
@@ -166,7 +164,7 @@ main .banner {
     background-image: url(../assets/images/banner-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
 
 main .banner .banner-flex {
@@ -206,6 +204,7 @@ main .banner a {
 /* SEÇÃO JOGOS POPULARES */
 main .jogos {
 
+    width: 100vw;
     height: 590px;
     background-color: #1B1426;
 
@@ -223,6 +222,7 @@ main .jogos-flex {
 
 /* SEÇÃO INFO */
 main .info {
+    width: 100vw;
     height: 1535px;
     background-color: #f9aa01;
 }
@@ -231,6 +231,7 @@ main .info .info-flex {
     height: 100%;
 }
 
+/* TITULO E LINHA INFO*/
 main .info-flex .info-title {
     display: flex;
     flex-direction: column;
@@ -240,9 +241,9 @@ main .info-flex .info-title {
     font-family: titiliumweb;
     font-size: 15px;
     text-transform: uppercase;
-    
+
     padding-top: 82px;
-    
+
 
 }
 
@@ -254,7 +255,7 @@ main .info-flex .info-title .linha {
 
 }
 
-
+/* CARDS */
 main .info-flex .banner-card .card {
     display: flex;
     align-items: center;
@@ -264,8 +265,8 @@ main .info-flex .banner-card .card {
     height: 300px;
 
     background-image: linear-gradient(to right bottom, rgba(122, 49, 236, 0.2), rgba(47, 7, 109, 0.83));
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);  
-    backdrop-filter: blur(px);
+    box-shadow: 0 0px 30px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
     border-radius: 8px;
 }
 
@@ -286,10 +287,23 @@ main .card p {
     padding-top: 19px;
 }
 
-.info .info-flex .info-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+/* POSITIONS CARD INFO */
+main .info .banner-card {
+    position: relative;
+    margin-top: 82px;
+    margin-bottom: 130px;
+}
+
+main .info .info-flex .banner-card #jogos-diferentes {
+    position: absolute;
+    right: 0;
+    bottom: 90px;
+}
+
+main .info .info-flex .banner-card #professores {
+    position: absolute;
+    top: 110px;
+    left: 0;
 }
 
 
@@ -302,21 +316,13 @@ main .card p {
 
 
 /* TABLETS >= 768px */
-@media screen and (min-width: 768px) {
-    
-}
+@media screen and (min-width: 768px) {}
 
 
 
 
 /* ---------DESKTOP-------------- */
 @media screen and (min-width: 992px) {
-
-
-
-    body {
-        color: white;
-    }
 
     /* layout grid */
     .layout-grid {
@@ -327,101 +333,156 @@ main .card p {
 
     }
 
-
-    /* HEADER */
     header {
+        display: flex;
+        flex-direction: column;
+        position: static;
         height: 140px;
-        background-color: #1b1426;
     }
 
-    header nav a {
-        text-decoration: none;
-        color: white;
-    }
-
-    /* ------------ HEADER TOP ------------- */
+    /* HEADER TOP */
     header .header-border {
-        border-bottom: 1px solid #f9aa01;
+        display: block;
+        border-bottom: 2px solid #f9aa01;
     }
 
     header .header-top {
-
-        height: 50px;
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
+        height: 50px;
     }
 
-    header .contatos {
+    header .header-top .contatos {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 450px;
+        border: 1px solid red;
+    }
+
+    header .header-top .contatos > div {
+        display: flex;
+        gap: 10px;
+        width: 200px;
+    }
+
+    /* HEADER BOTTOM */
+    /* esconde os elementos desnecessários */
+    header .header-bottom .menu-hamburger,
+    header .header-bottom .menu-pontos,
+    header .header-bottom nav .phone,
+    header .header-bottom nav .email,
+    header .header-bottom nav .sociais {
+        display: none;
+    }
+
+
+    header .header-bottom nav {
+        position: static;
+        width: 440px;
+        height: 50px;
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        width: 407px;
+
+        padding-bottom: 0;
+    }
+
+    header .header-bottom nav>a {
+        font-size: 14px;
+        border: none;
+        padding: 0;
     }
 
     header .phone {
         display: flex;
-        width: 150px;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    header .email {
-        display: flex;
-        width: 204px;
-        justify-content: space-between;
         align-items: center;
     }
 
     header .sociais {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+
         width: 117px;
+        height: 25px;
     }
 
-    /* ---------------- HEADER BOTTOM ---------------------- */
+    header .header-bottom .logo {
+        width: 200px;
+    }
 
-    header .header-bottom {
-        display: flex;
+    header .header-bottom .menu-usuario {
+        position: static;
+        width: 140px;
+        flex-direction: row;
+        height: auto;
+        background-color: transparent;
+        background-image: none;
+    }
+
+    /* alterar cor do link INICIO */
+    header .header-bottom #inicio {
+        color: #f9aa01;
+    }
+
+
+
+    /* MAIN DESKTOP */
+
+    main {
+        margin-top: 0;
+    }
+    /* BANNER */
+    main .banner {
+        background-image: url(../assets/images/Banner_background_1.png);
+        height: 722px;
+    }
+
+    main .banner .banner-flex h1 {
+        font-size: 80px;
+    }
+
+
+    /* JOGO POPULAR E ULTIMO JOGO */
+    main .jogos .jogos-flex {
+        flex-direction: row;
         justify-content: space-between;
-        align-items: center;
-
-        height: 91px;
-
     }
 
-    header .menu {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 407px;
+    main .jogos .jogos-flex .mais-popular {
+        width: 556px;
+        height: 313px;
     }
 
-    header .menu-usuario {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 117px;
+    main .jogos .jogos-flex .ultimo-jogo {
+        width: 556px;
+        height: 313px;
     }
 
-    header #menu-hamburger {
-        display: none;
+
+
+    /* INFO */
+    main .info .info-flex .info-title {
+        font-size: 40px;
     }
 
-    header #menu-pontos {
-        display: none;
+    main .info .info-flex .banner-card .card {
+        width: 360px;
+        height: 440px;
     }
 
-    header .header-bottom .phone {
-        display: none;
+    main .card h2 {
+        font-size: 25px;
     }
 
-    header .header-bottom .email {
-        display: none;
+    main .card p {
+        width: 248px;
+        font-size: 16px;
     }
 
-    header .header-bottom .sociais {
-        display: none;
+    main .logo-card {
+        width: 143px;
+        width: 143px;
     }
 }
