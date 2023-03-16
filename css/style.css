@@ -75,14 +75,12 @@ header .menu-usuario {
     align-items: center;
     justify-content: space-evenly;
 
-
-
     position: fixed;
     top: 60px;
-    right: -66vw;
+    right: -20vw;
+    width: 20vw;
+    height: 170px;
 
-    width: 7vw;
-    height: calc(60vh - 60px);
     background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
     backdrop-filter: blur(45px);
 
@@ -267,7 +265,7 @@ main .info-flex .banner-card .card {
 
     background-image: linear-gradient(to right bottom, rgba(122, 49, 236, 0.2), rgba(47, 7, 109, 0.83));
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);  
-    backdrop-filter: blur(45px);
+    backdrop-filter: blur(px);
     border-radius: 8px;
 }
 
@@ -288,8 +286,7 @@ main .card p {
     padding-top: 19px;
 }
 
-.info-card {
-    height: 100%;
+.info .info-flex .info-card {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
