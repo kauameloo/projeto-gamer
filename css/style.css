@@ -49,7 +49,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 60px;
     z-index: 100;
     background-color: #1B1426;
@@ -72,7 +72,7 @@ header .menu-usuario {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
     position: fixed;
     top: 60px;
@@ -159,7 +159,7 @@ main {
 
 /* MAIN BANNER */
 main .banner {
-    width: 100vw;
+    width: 100%;
     height: 606px;
     background-image: url(../assets/images/banner-mobile.png);
     background-repeat: no-repeat;
@@ -204,7 +204,7 @@ main .banner a {
 /* SEÇÃO JOGOS POPULARES */
 main .jogos {
 
-    width: 100vw;
+    width: 100%;
     height: 590px;
     background-color: #1B1426;
 
@@ -222,13 +222,17 @@ main .jogos-flex {
 
 /* SEÇÃO INFO */
 main .info {
-    width: 100vw;
+    width: 100%;
     height: 1535px;
     background-color: #f9aa01;
+
 }
 
 main .info .info-flex {
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
 }
 
 /* TITULO E LINHA INFO*/
@@ -308,6 +312,84 @@ main .info .info-flex .banner-card #professores {
 
 
 
+/* SEÇÃO NOTÍCIAS */
+main .noticias {
+    height: 3675px;
+    background-image: url(../assets/images/backgrund_notícias.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+main .noticias-flex {
+    height: 100%;
+}
+
+main .noticias-flex .noticias-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 46px;
+}
+
+main .noticias-flex .noticias-title h1 {
+    font-family: titiliumweb;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-bottom: 35px;
+}
+
+main .noticias-flex .noticias-title #noticias-linha {
+    width: 204px;
+    border: 1px solid #f9aa01;
+}
+
+
+/* CARDS NOTICIA */
+
+main .noticias-flex .noticias-card {
+    width: 335px;
+    height: 387px;
+
+    background-image: linear-gradient(to right bottom, rgba(37, 26, 52, 0.34), rgba(5, 1, 12, 0.79));
+    backdrop-filter: blur(6px);
+    border-radius: 8px;
+
+}
+
+main .noticias-flex .noticias-card .noticias-conteudo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    padding-top: 16px;
+    padding-left: 25px;
+}
+
+main .noticias-flex .noticias-card .noticias-conteudo h2 {
+    font-family: titiliumwebbold;
+    font-size: 24px;
+    padding-bottom: 16px;
+}
+
+main .noticias-flex .noticias-card .noticias-conteudo p {
+    width: 284.30px;
+
+    font-family: quicksand;
+    font-size: 16px;
+
+    text-align: justify;
+}
+
+main .all-noticias-card {
+    padding-top: 118px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 46px;
+}
+
+
 
 
 
@@ -358,13 +440,33 @@ main .info .info-flex .banner-card #professores {
         justify-content: space-between;
         align-items: center;
         width: 450px;
-        border: 1px solid red;
+
+        font-family: Inter;
+        font-size: 14px;
     }
 
     header .header-top .contatos > div {
         display: flex;
         gap: 10px;
         width: 200px;
+    }
+
+    header .phone {
+        display: flex;
+        align-items: center;
+    }
+
+    header .email {
+        display: flex;
+        align-items: center;
+    }
+
+    header .sociais {
+        display: flex;
+        justify-content: space-between;
+
+        width: 117px;
+        height: 25px;
     }
 
     /* HEADER BOTTOM */
@@ -395,19 +497,6 @@ main .info .info-flex .banner-card #professores {
         padding: 0;
     }
 
-    header .phone {
-        display: flex;
-        align-items: center;
-    }
-
-    header .sociais {
-        display: flex;
-        justify-content: space-between;
-
-        width: 117px;
-        height: 25px;
-    }
-
     header .header-bottom .logo {
         width: 200px;
     }
@@ -425,8 +514,6 @@ main .info .info-flex .banner-card #professores {
     header .header-bottom #inicio {
         color: #f9aa01;
     }
-
-
 
     /* MAIN DESKTOP */
 
@@ -463,6 +550,10 @@ main .info .info-flex .banner-card #professores {
 
 
     /* INFO */
+    main .info {
+        height: auto;
+    }
+
     main .info .info-flex .info-title {
         font-size: 40px;
     }
@@ -485,4 +576,85 @@ main .info .info-flex .banner-card #professores {
         width: 143px;
         width: 143px;
     }
+
+/* POSITIONS CARD INFO DESKTOP */
+
+main .info .banner-card {
+    position: relative;
+    margin-top: 82px;
+    margin-bottom: 130px;
+}
+
+main .info .info-flex .banner-card #jogos-diferentes {
+    position: absolute;
+    top: 193px;
+    right: 0px;
+    left: 245px;
+    bottom: 0;
+}
+
+main .info .info-flex .banner-card #professores {
+    position: absolute;
+    top: 193px;
+    right: 0;
+    left: 0px;
+    bottom: 0;
+}
+
+main .info .info-flex .banner-card #jogos-diferentes-imagem {
+    width: 425px;
+    height: 692px;
+}
+
+main .info .info-flex .banner-card #professores-imagem {
+    width: 521px;
+    height: 692px;
+}
+
+main .cards {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+
+
+/* SEÇÃO NOTICIAS DESKTOP */
+
+main .noticias {
+    height: 1175px;
+    background-image: url(../assets/images/backgrund_notícias-desktop.png);
+    width: 100%;
+    
+}
+
+main .noticias-flex .noticias-title h1 {
+    font-size: 40px;
+}
+
+main .noticias-flex .all-noticias-card {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 62px 15px;
+}
+
+main .noticias-flex .noticias-card {
+    width: 285px;
+    height: 387px;
+}
+
+main .noticias-flex .noticias-card .noticias-conteudo h2 {
+    font-size: 24px;    
+}
+
+main .noticias-flex .noticias-card .noticias-conteudo p {
+    font-size: 16px;    
+    width: 241px;
+}
+
+main .noticias-flex .noticias-card #noticias-imagem {
+    width: 285px;
+    height: 174px;
+}
+
 }
