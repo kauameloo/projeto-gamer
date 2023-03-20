@@ -145,7 +145,7 @@ header nav .sociais {
 
 }
 
-header nav .phone, 
+header nav .phone,
 .email {
     gap: 15px;
 }
@@ -319,6 +319,7 @@ main .noticias {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
+    height: 100%;
 }
 
 main .noticias-flex {
@@ -392,6 +393,193 @@ main .all-noticias-card {
 
 
 
+/* FOOTER */
+footer {
+    height: 1531px;
+    background-image: url(../assets/images/background-footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer .footer-flex {
+    height: 100%;
+}
+
+
+/* LOGO GAMER */
+footer .footer-flex .footer-paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 41px;
+
+    padding-top: 91px;
+}
+
+footer .footer-flex .footer-paragraph #logo-footer {
+    width: 110px;
+    height: 32px;
+
+}
+
+footer .footer-flex .footer-paragraph p {
+    font-family: quicksand;
+    font-size: 14px;
+    height: 87px;
+}
+
+footer .footer-flex .sociais {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 41px;
+}
+
+footer .footer-flex .sociais #logo-footer {
+    width: 40px;
+    height: 40.8px;
+}
+
+
+/* LINKS UTEIS */
+footer .footer-flex .links-uteis {
+    display: flex;
+    flex-direction: column;
+    padding-top: 119.92px;
+}
+
+footer .footer-flex .all-links {
+    padding-top: 43px;
+}
+
+footer .footer-flex .links-uteis .links {
+    display: flex;
+    align-items: center;
+    gap: 12.18px;
+}
+
+footer .footer-flex h1 {
+    font-family: titiliumweb;
+    font-size: 30px;
+}
+
+footer .footer-flex .linha-title {
+    width: 112.96px;
+    height: 0;
+    border: 1px solid #f9aa01;
+}
+
+
+footer .footer-flex .links-uteis h2 {
+    font-family: titiliumwebbold;
+    font-size: 16px;
+}
+
+footer .footer-flex .links-uteis .linha-links {
+    width: 14.5px;
+    height: 0;
+    border: 1px solid #f9aa01;
+
+}
+
+
+/* CONTATOS */
+footer .footer-flex .contatos {
+    padding-top: 119.95px;
+}
+
+footer .footer-flex .contatos .all-contatos {
+    padding-top: 43px;
+}
+
+footer .footer-flex .contatos h3 {
+    font-family: titiliumwebbold;
+    font-size: 16px;
+    color: #f9aa01;
+}
+
+footer .footer-flex .contatos p {
+    font-family: titiliumwebbold;
+    font-size: 16px;
+}
+
+
+
+/* NEWSLETTER */
+footer .footer-flex .newsletter {
+    padding-top: 119.5px;
+}
+
+footer .footer-flex .newsletter .newsletter-box {
+    display: flex;
+    flex-direction: column;
+
+    gap: 16px;
+    padding-top: 54.9px;
+}
+
+footer .footer-flex .newsletter .newsletter-box form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 333px;
+    height: 40px;
+}
+
+footer .footer-flex .newsletter .newsletter-box .email-box {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, .8), rgba(255, 255, 255, 0.2));
+
+    border-radius: 8px;
+}
+
+footer .footer-flex .newsletter .newsletter-box .email-box input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: quicksand;
+    padding-left: 17.53px;
+}
+
+footer .footer-flex .newsletter .newsletter-box .email-box input::placeholder {
+    color: white;
+}
+
+footer .footer-flex .newsletter .newsletter-box button {
+    width: 333px;
+    height: 40px;
+    background-color: #f9aa01;
+    border-radius: 8px;
+
+    color: black;
+    font-family: titiliumwebbold;
+    font-size: 24px;
+
+}
+
+footer #copyright {
+    padding-top: 15px;
+    font-family: quicksand;
+    text-align: center;
+    font-size: 16px;
+}
+
+footer #voltar-ao-topo {
+    display: flex;
+    justify-content: flex-end;
+
+    padding-top: 90px;
+}
+
+
+
+
+
+
 
 
 
@@ -445,7 +633,7 @@ main .all-noticias-card {
         font-size: 14px;
     }
 
-    header .header-top .contatos > div {
+    header .header-top .contatos>div {
         display: flex;
         gap: 10px;
         width: 200px;
@@ -520,6 +708,7 @@ main .all-noticias-card {
     main {
         margin-top: 0;
     }
+
     /* BANNER */
     main .banner {
         background-image: url(../assets/images/Banner_background_1.png);
@@ -577,84 +766,84 @@ main .all-noticias-card {
         width: 143px;
     }
 
-/* POSITIONS CARD INFO DESKTOP */
+    /* POSITIONS CARD INFO DESKTOP */
 
-main .info .banner-card {
-    position: relative;
-    margin-top: 82px;
-    margin-bottom: 130px;
-}
+    main .info .banner-card {
+        position: relative;
+        margin-top: 82px;
+        margin-bottom: 130px;
+    }
 
-main .info .info-flex .banner-card #jogos-diferentes {
-    position: absolute;
-    top: 193px;
-    right: 0px;
-    left: 245px;
-    bottom: 0;
-}
+    main .info .info-flex .banner-card #jogos-diferentes {
+        position: absolute;
+        top: 193px;
+        right: 0px;
+        left: 245px;
+        bottom: 0;
+    }
 
-main .info .info-flex .banner-card #professores {
-    position: absolute;
-    top: 193px;
-    right: 0;
-    left: 0px;
-    bottom: 0;
-}
+    main .info .info-flex .banner-card #professores {
+        position: absolute;
+        top: 193px;
+        right: 0;
+        left: 0px;
+        bottom: 0;
+    }
 
-main .info .info-flex .banner-card #jogos-diferentes-imagem {
-    width: 425px;
-    height: 692px;
-}
+    main .info .info-flex .banner-card #jogos-diferentes-imagem {
+        width: 425px;
+        height: 692px;
+    }
 
-main .info .info-flex .banner-card #professores-imagem {
-    width: 521px;
-    height: 692px;
-}
+    main .info .info-flex .banner-card #professores-imagem {
+        width: 521px;
+        height: 692px;
+    }
 
-main .cards {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 20px;
-}
+    main .cards {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 20px;
+    }
 
 
 
-/* SEÇÃO NOTICIAS DESKTOP */
+    /* SEÇÃO NOTICIAS DESKTOP */
 
-main .noticias {
-    height: 1175px;
-    background-image: url(../assets/images/backgrund_notícias-desktop.png);
-    width: 100%;
-    
-}
+    main .noticias {
+        height: 1175px;
+        background-image: url(../assets/images/backgrund_notícias-desktop.png);
+        width: 100%;
 
-main .noticias-flex .noticias-title h1 {
-    font-size: 40px;
-}
+    }
 
-main .noticias-flex .all-noticias-card {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 62px 15px;
-}
+    main .noticias-flex .noticias-title h1 {
+        font-size: 40px;
+    }
 
-main .noticias-flex .noticias-card {
-    width: 285px;
-    height: 387px;
-}
+    main .noticias-flex .all-noticias-card {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 62px 15px;
+    }
 
-main .noticias-flex .noticias-card .noticias-conteudo h2 {
-    font-size: 24px;    
-}
+    main .noticias-flex .noticias-card {
+        width: 285px;
+        height: 387px;
+    }
 
-main .noticias-flex .noticias-card .noticias-conteudo p {
-    font-size: 16px;    
-    width: 241px;
-}
+    main .noticias-flex .noticias-card .noticias-conteudo h2 {
+        font-size: 24px;
+    }
 
-main .noticias-flex .noticias-card #noticias-imagem {
-    width: 285px;
-    height: 174px;
-}
+    main .noticias-flex .noticias-card .noticias-conteudo p {
+        font-size: 16px;
+        width: 241px;
+    }
+
+    main .noticias-flex .noticias-card #noticias-imagem {
+        width: 285px;
+        height: 174px;
+    }
 
 }
