@@ -15,6 +15,11 @@
 }
 
 @font-face {
+    font-family: titiliumwebregular;
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
+}
+
+@font-face {
     font-family: quicksand;
     src: url(../assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
 }
@@ -434,11 +439,6 @@ footer .footer-flex .sociais {
     padding-top: 41px;
 }
 
-footer .footer-flex .sociais #logo-footer {
-    width: 40px;
-    height: 40.8px;
-}
-
 
 /* LINKS UTEIS */
 footer .footer-flex .links-uteis {
@@ -512,6 +512,7 @@ footer .footer-flex .newsletter {
 footer .footer-flex .newsletter .newsletter-box {
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     gap: 16px;
     padding-top: 54.9px;
@@ -529,7 +530,7 @@ footer .footer-flex .newsletter .newsletter-box .email-box {
     width: 100%;
     height: 100%;
     background-color: transparent;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, .8), rgba(255, 255, 255, 0.2));
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1));
 
     border-radius: 8px;
 }
@@ -541,7 +542,7 @@ footer .footer-flex .newsletter .newsletter-box .email-box input {
     border: none;
     outline: none;
     color: white;
-    font-family: quicksand;
+    font-family: titiliumwebregular;
     padding-left: 17.53px;
 }
 
@@ -554,6 +555,7 @@ footer .footer-flex .newsletter .newsletter-box button {
     height: 40px;
     background-color: #f9aa01;
     border-radius: 8px;
+    border: none;
 
     color: black;
     font-family: titiliumwebbold;
@@ -561,8 +563,14 @@ footer .footer-flex .newsletter .newsletter-box button {
 
 }
 
+footer .copy-back {
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px;
+    gap: 27px;
+}
+
 footer #copyright {
-    padding-top: 15px;
     font-family: quicksand;
     text-align: center;
     font-size: 16px;
@@ -571,8 +579,6 @@ footer #copyright {
 footer #voltar-ao-topo {
     display: flex;
     justify-content: flex-end;
-
-    padding-top: 90px;
 }
 
 
@@ -844,6 +850,124 @@ footer #voltar-ao-topo {
     main .noticias-flex .noticias-card #noticias-imagem {
         width: 285px;
         height: 174px;
+    }
+
+
+
+
+    /* FOOTER DESKTOP */
+    footer {
+        height: 520px;
+        background-image: url(../assets/images/footer-banner-desktop.png);
+    }
+
+    footer .all-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        padding-top: 102.02px;
+    }
+
+    footer .group-1 {
+        display: flex;
+        gap: 20px;
+    }
+
+    footer .group-2 {
+        display: flex;
+        gap: 18px;
+
+    }
+
+
+
+    /* LOGO E SOCIAIS */
+    footer .footer-para-social {
+        display: flex;
+        flex-direction: column;
+
+        width: 294px;
+    }
+
+    footer .footer-flex .footer-paragraph {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 41px;
+
+        padding-top: 0;
+    }
+
+    footer .footer-flex .footer-paragraph #logo-footer {
+        width: 196px;
+        height: 56.11px;
+
+    }
+
+    footer .footer-flex .footer-paragraph p {
+        font-family: quicksand;
+        font-size: 16px;
+        height: 87.17px;
+    }
+
+    footer .footer-flex .sociais {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 37.07px;
+
+        width: 206px;
+    }
+
+
+
+    /* LINKS UTEIS DESKTOP */
+    footer .footer-flex .links-uteis {
+        padding-top: 0;
+    }
+
+    footer .footer-flex .all-links {
+        display: flex;
+        flex-direction: column;
+        padding-top: 43px;
+        gap: 11.02px;
+    }
+
+
+
+    /* CONTATOS DESKTOP */
+
+    footer .footer-flex .contatos {
+        padding-top: 0;
+    }
+
+    footer .all-contatos {
+        display: flex;
+        flex-direction: column;
+        gap: 5.01px;
+    }
+
+
+
+    /* NEWSLETTER DESKTOP */
+    footer .footer-flex .newsletter {
+        padding-top: 0;
+    }
+    
+    footer .footer-flex .newsletter .newsletter-box form {
+        width: 285px;
+        height: 40.08px;
+    }
+    
+    footer .footer-flex .newsletter .newsletter-box button {
+        width: 285px;
+        height: 40.08px;
+    }
+
+    /* copyback */
+    footer .copy-back {
+        padding-top: 50px;
+        gap: 0;
     }
 
 }

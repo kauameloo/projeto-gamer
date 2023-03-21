@@ -15,6 +15,11 @@
 }
 
 @font-face {
+    font-family: titiliumwebregular;
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
+}
+
+@font-face {
     font-family: quicksand;
     src: url(../assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
 }
@@ -35,7 +40,6 @@
 .mostrar-menu {
     left: 0 !important;
 }
-
 /* -------------------- Mobile first ---------------------- */
 
 body {
@@ -149,6 +153,140 @@ header nav .phone,
 .email {
     gap: 15px;
 }
+
+
+
+
+/* MAIN */
+main {
+    margin-top: 60px;
+}
+
+/* MAIN BANNER */
+main .login-banner {
+    height: 687px;
+    background-image: url(../assets/images/login_banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+main .login-banner-flex {
+    display: flex;
+    justify-content: center;
+
+    height: 100%;
+}
+
+main .login-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 78px;
+
+    width: 335px;
+    height: 462px;
+
+    /* background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.6), rgba(60, 3, 65, 0.38)); */
+    backdrop-filter: blur(10px);
+
+
+    border: 2px solid transparent;
+    background: 
+        linear-gradient(to right bottom, rgba(27, 20, 38, 0.6), rgba(60, 3, 65, 0.38)) content-box,
+        linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.02)) border-box;
+    border-image-slice: 1;
+    border-radius: 8px;
+}
+
+main .login-box .login-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding-top: 46px;
+}
+
+main .login-box .login-title #login-linha {
+    width: 90px;
+    border: 3px solid #f9aa01;
+    height: 0;
+}
+
+main .login-box .login-title h1 {
+    font-family: titiliumweb;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+
+/* FORMULARIO*/
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 31px;
+
+    padding-top: 90px;
+
+}
+
+form .formulario {
+    display: flex;
+    justify-content: space-between;
+
+    width: 273px;
+    height: 40px;
+
+    gap: 12px;
+
+    padding-left: 16px;
+
+    border-radius: 8px;
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.1));
+
+}
+
+form input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: titiliumwebregular;
+}
+
+form input::placeholder {
+    color: white;
+}
+
+
+/* BOTAO LOGAR */
+main .botao-logar {
+    padding-top: 56px;
+}
+
+main .botao-logar button {
+    width: 273px;
+    height: 40px;
+
+    background-color: #f9aa01;
+    border-radius: 8px;
+    border: none;
+
+    font-family: titiliumwebbold;
+    font-size: 24px;
+}
+
+
+
+
+
+
+
+
 
 
 
