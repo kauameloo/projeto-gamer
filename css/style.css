@@ -449,6 +449,9 @@ footer .footer-flex .links-uteis {
 
 footer .footer-flex .all-links {
     padding-top: 43px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48.34px;
 }
 
 footer .footer-flex .links-uteis .links {
@@ -518,7 +521,7 @@ footer .footer-flex .newsletter .newsletter-box {
     padding-top: 54.9px;
 }
 
-footer .footer-flex .newsletter .newsletter-box form {
+footer .footer-flex .newsletter .newsletter-box #newsletter-form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -580,6 +583,8 @@ footer #voltar-ao-topo {
     display: flex;
     justify-content: flex-end;
 }
+
+
 
 
 

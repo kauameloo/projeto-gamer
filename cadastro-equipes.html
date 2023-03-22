@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - ProjetoGamer</title>
-    <link rel="stylesheet" href="css/login.css">
-
-
+    <title>Equipes - ProjetoGamer</title>
+    <link rel="stylesheet" href="css/equipes.css">
 
 </head>
 
 <body>
+
     <header>
         <div class="header-border">
             <div class="header-top layout-grid">
@@ -101,7 +100,7 @@
             <img onclick="mostrarUsuario()" class="menu-pontos" src="assets/icons/Vectorpontos.svg" alt="menu 3 pontos">
 
             <div class="menu-usuario" id="menu3pt">
-                <a href="">
+                <a href="login.html">
                     <img src="assets/icons/perfil.svg" alt="icone de
                             perfil">
                 </a>
@@ -129,35 +128,45 @@
         }
     </script>
 
+
+
+
+
     <main>
-        <div class="login-banner">
-            <div class="layout-grid login-banner-flex">
-                <div class="login-box">
-                    <div class="login-title">
-                        <div id="login-linha"></div>
-                        <h1>Login</h1>
+        <div class="equipes-banner">
+            <div class="layout-grid equipes-banner-flex">
+                <div class="equipes-box">
+                    <div class="equipes-title">
+                        <h1>Cadastro de Equipes</h1>
+                        <div class="linha-title"></div>
                     </div>
 
-                    <form id="formulario-login" action="">
-                            <div class="formulario">
-                                <img src="assets/icons/user-vector.svg" alt="">
-                                <input type="email" placeholder="Digite seu e-mail:">
-                            </div>
+                    <form id="formulario-cadastro" action="">
+                        <div class="formulario">
+                            <input type="email" placeholder="Digite o ID da sua equipe:">
+                        </div>
 
-                            <div class="formulario">
-                                <img src="assets/icons/password-vector.svg" alt="">
-                                <input type="password" placeholder="Digite sua senha:">
-                            </div>
+                        <div class="formulario">
+                            <input type="password" placeholder="Digite o nome da sua equipe:">
+                        </div>
+
+                        <div class="select-image">
+                            <input type="file">
+                        </div>
 
 
                     </form>
-                    <div class="botao-logar">
-                        <button type="button">Logar</button>
+
+
+                    <div class="botao-cadastrar">
+                        <button type="button">Cadastro</button>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+
+
 
     <footer>
         <div class="layout-grid footer-flex">
@@ -272,7 +281,6 @@
                     <p>©Copyright2022-GamerJogosDigitais</p>
                 </div>
             </div>
-
 
         </div>
 

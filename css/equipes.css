@@ -40,6 +40,7 @@
 .mostrar-menu {
     left: 0 !important;
 }
+
 /* -------------------- Mobile first ---------------------- */
 
 body {
@@ -157,40 +158,31 @@ header nav .phone,
 
 
 
-/* MAIN */
+/* MAIN MOBILE */
 main {
     margin-top: 60px;
 }
 
-/* MAIN BANNER */
-main .login-banner {
-    height: 687px;
-    background-image: url(../assets/images/login_banner.png);
-    background-repeat: no-repeat;
+main .equipes-banner {
+    height: 1231px;
+    background-image: url(../assets/images/banner-cadastro-equipe-mobile.png);
     background-size: cover;
-
 }
 
-main .login-banner-flex {
-    display: flex;
-    justify-content: center;
 
+
+/* CADASTRO EQUIPES */
+main .equipes-banner-flex {
     height: 100%;
+    padding-top: 78px;
 }
 
-main .login-box {
+main .equipes-box {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    margin-top: 78px;
-
-    width: 335px;
-    height: 462px;
-
-    /* background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.6), rgba(60, 3, 65, 0.38)); */
     backdrop-filter: blur(10px);
-
 
     border: 2px solid transparent;
     background: 
@@ -198,31 +190,44 @@ main .login-box {
         linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.02)) border-box;
     border-image-slice: 1;
     border-radius: 8px;
+
+    width: 335px;
+    height: 492px;
 }
 
-main .login-box .login-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    padding-top: 46px;
-}
-
-main .login-box .login-title #login-linha {
-    width: 90px;
-    border: 3px solid #f9aa01;
-    height: 0;
-}
-
-main .login-box .login-title h1 {
+main .equipes-box h1 {
     font-family: titiliumweb;
     font-size: 28px;
     text-transform: uppercase;
 }
 
+main .equipes-box .equipes-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+
+    padding-top: 40px;
+}
+
+main .equipes-box .equipes-title .linha-title {
+    width: 250px;
+    height: 0;
+    border: 3px solid #f9aa01;
+}
+
+
+
+
+/* FORMULARIO FLEXB */
+main .equipes-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* FORMULARIO*/
-#formulario-login {
+#formulario-cadastro {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -249,7 +254,7 @@ form .formulario {
 
 }
 
-#formulario-login input {
+#formulario-cadastro input {
     width: 100%;
     background-color: transparent;
     border: none;
@@ -258,17 +263,29 @@ form .formulario {
     font-family: titiliumwebregular;
 }
 
-#formulario-login input::placeholder {
+#formulario-cadastro input::placeholder {
     color: white;
 }
 
-
-/* BOTAO LOGAR */
-main .botao-logar {
-    padding-top: 56px;
+main .formulario-cadastro .select-image {
+    height: 40px;
 }
 
-main .botao-logar button {
+input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #D9D9D9;
+    padding: 10px 10px;
+    border-radius: 8px;
+    color: black;
+    cursor: pointer;
+}
+
+main .equipes-box .botao-cadastrar {
+    padding-top: 49px;
+}
+
+main .equipes-box .botao-cadastrar button {
     width: 273px;
     height: 40px;
 
@@ -279,6 +296,8 @@ main .botao-logar button {
     font-family: titiliumwebbold;
     font-size: 24px;
 }
+
+
 
 
 
@@ -471,306 +490,4 @@ footer #copyright {
 footer #voltar-ao-topo {
     display: flex;
     justify-content: flex-end;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* DESKTOP */
-@media screen and (min-width: 992px) {
-
-    /* layout grid */
-    .layout-grid {
-        width: 100%;
-        height: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-
-    }
-
-    header {
-        display: flex;
-        flex-direction: column;
-        position: static;
-        height: 140px;
-    }
-
-    /* HEADER TOP */
-    header .header-border {
-        display: block;
-        border-bottom: 2px solid #f9aa01;
-    }
-
-    header .header-top {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 50px;
-    }
-
-    header .header-top .contatos {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 450px;
-
-        font-family: Inter;
-        font-size: 14px;
-    }
-
-    header .header-top .contatos>div {
-        display: flex;
-        gap: 10px;
-        width: 200px;
-    }
-
-    header .phone {
-        display: flex;
-        align-items: center;
-    }
-
-    header .email {
-        display: flex;
-        align-items: center;
-    }
-
-    header .sociais {
-        display: flex;
-        justify-content: space-between;
-
-        width: 117px;
-        height: 25px;
-    }
-
-    /* HEADER BOTTOM */
-    /* esconde os elementos desnecessários */
-    header .header-bottom .menu-hamburger,
-    header .header-bottom .menu-pontos,
-    header .header-bottom nav .phone,
-    header .header-bottom nav .email,
-    header .header-bottom nav .sociais {
-        display: none;
-    }
-
-
-    header .header-bottom nav {
-        position: static;
-        width: 440px;
-        height: 50px;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-
-        padding-bottom: 0;
-    }
-
-    header .header-bottom nav>a {
-        font-size: 14px;
-        border: none;
-        padding: 0;
-    }
-
-    header .header-bottom .logo {
-        width: 200px;
-    }
-
-    header .header-bottom .menu-usuario {
-        position: static;
-        width: 140px;
-        flex-direction: row;
-        height: auto;
-        background-color: transparent;
-        background-image: none;
-    }
-
-    /* alterar cor do link INICIO */
-    header .header-bottom #inicio {
-        color: #f9aa01;
-    }
-
-
-
-
-
-
-
-
-
-    /* main */
-
-    main {
-        margin-top: 0;
-    }
-
-    main .login-banner {
-        height: 682px;
-        background-image: url(../assets/images/banner-login-desktop.png);
-        background-position: bottom;
-    }
-
-    main .login-box {
-        width: 800px;
-        height: 520px;
-    }
-
-    main .login-box .login-title {
-        flex-direction: column-reverse;
-    }
-
-    main .login-box .login-title h1 {
-        font-size: 40px;
-    }
-
-    main .formulario {
-        width: 565px;
-    }
-
-    main .botao-logar button {
-        width: 201px;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /* FOOTER DESKTOP */
-    footer {
-        height: 520px;
-        background-image: url(../assets/images/footer-banner-desktop.png);
-    }
-
-    footer .all-content {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-
-        padding-top: 102.02px;
-    }
-
-    footer .group-1 {
-        display: flex;
-        gap: 20px;
-    }
-
-    footer .group-2 {
-        display: flex;
-        gap: 18px;
-
-    }
-
-
-
-    /* LOGO E SOCIAIS */
-    footer .footer-para-social {
-        display: flex;
-        flex-direction: column;
-
-        width: 294px;
-    }
-
-    footer .footer-flex .footer-paragraph {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 41px;
-
-        padding-top: 0;
-    }
-
-    footer .footer-flex .footer-paragraph #logo-footer {
-        width: 196px;
-        height: 56.11px;
-
-    }
-
-    footer .footer-flex .footer-paragraph p {
-        font-family: quicksand;
-        font-size: 16px;
-        height: 87.17px;
-    }
-
-    footer .footer-flex .sociais {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 37.07px;
-
-        width: 206px;
-    }
-
-
-
-    /* LINKS UTEIS DESKTOP */
-    footer .footer-flex .links-uteis {
-        padding-top: 0;
-    }
-
-    footer .footer-flex .all-links {
-        display: flex;
-        flex-direction: column;
-        padding-top: 43px;
-        gap: 11.02px;
-    }
-
-
-
-    /* CONTATOS DESKTOP */
-
-    footer .footer-flex .contatos {
-        padding-top: 0;
-    }
-
-    footer .all-contatos {
-        display: flex;
-        flex-direction: column;
-        gap: 5.01px;
-    }
-
-
-
-    /* NEWSLETTER DESKTOP */
-    footer .footer-flex .newsletter {
-        padding-top: 0;
-    }
-    
-    footer .footer-flex .newsletter .newsletter-box form {
-        width: 285px;
-        height: 40.08px;
-    }
-    
-    footer .footer-flex .newsletter .newsletter-box button {
-        width: 285px;
-        height: 40.08px;
-    }
-
-    /* copyback */
-    footer .copy-back {
-        padding-top: 50px;
-        gap: 0;
-    }
-
 }
