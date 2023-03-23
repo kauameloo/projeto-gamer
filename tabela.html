@@ -10,13 +10,25 @@
 
 <body>
 
-    <table border="2">
-        <thead>
+    <style>
+        table tr .head {
+            border-bottom: 3px solid orange;
+        }
+
+        table tr th {
+            color: orange;
+            text-transform: uppercase;
+            text-shadow: 0 0 7px black;
+        }
+    </style>
+
+    <table>
+        <thead class="head">
             <tr>
                 <th>id</th>
                 <th>nome</th>
                 <th>foto</th>
-                <th>ações</th>
+                <th></th>
             </tr>
         </thead>
 

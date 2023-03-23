@@ -175,6 +175,10 @@ main .equipes-banner {
 main .equipes-banner-flex {
     height: 100%;
     padding-top: 78px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 main .equipes-box {
@@ -220,11 +224,6 @@ main .equipes-box .equipes-title .linha-title {
 
 
 /* FORMULARIO FLEXB */
-main .equipes-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 /* FORMULARIO*/
 #formulario-cadastro {
@@ -295,6 +294,120 @@ main .equipes-box .botao-cadastrar button {
 
     font-family: titiliumwebbold;
     font-size: 24px;
+}
+
+
+
+/* TABELA MOBILE */
+
+main .tabela-box {
+    width: 338px;
+
+    display: flex;
+    flex-direction: column;
+
+
+    padding-top: 140px;
+}
+
+main .tabela-box .tabela-linha {
+    width: 0;
+    height: 33.04px;
+    border: 3px solid #f9aa01;
+}
+
+main .all-tabelas {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+
+    gap: 15px;
+}
+
+main .tabela {
+    font-family: titiliumwebbold;
+    font-size: 20px;
+    text-transform: uppercase;
+
+    height: 70px;
+
+    border: 2px solid transparent;
+    background: 
+        linear-gradient(to right bottom, rgba(27, 20, 38, 0.6), rgba(60, 3, 65, 0.38)) content-box,
+        linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.02)) border-box;
+    border-image-slice: 1;
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+
+}
+
+main .tabela-box .tabela {
+    display: flex;
+}
+
+main .tabela-box .all-head {
+    padding-bottom: 29px;
+}
+
+main .tabela-box .tabela-head {
+    display: flex;
+    justify-content: space-around;
+
+    font-family: titiliumweb;
+    font-size: 20px;
+    color: #f9aa01;
+
+    text-transform: uppercase;
+    text-shadow: 0 0 7px black;
+}
+
+main .tabela-head .separador {
+    width: 15px;
+}
+
+main .head-linha {
+    width: 336px;
+    border: 3px solid #f9aa01;
+    height: 0;
+
+}
+
+main .trash button {
+    background-color: transparent;
+    border: none;
+}
+
+
+
+
+
+/* ESPAÇAMENTO CONTEÚDO TABELA MOBILE */
+main .id, .nome, .foto, .trash {
+    display: flex;
+    align-items: center;
+}
+
+main .id {
+    padding-left: 20.16px;
+    gap: 15.36px;
+}
+
+main .nome {
+    padding-left: 23.04px;
+    gap: 53.76px;
+}
+
+main .foto {
+    padding-left: 16.32px;
+}
+
+main .trash {
+    padding-left: 15.36px;
+    gap: 24.96px;
 }
 
 
@@ -490,4 +603,287 @@ footer #copyright {
 footer #voltar-ao-topo {
     display: flex;
     justify-content: flex-end;
+}
+
+
+
+
+
+
+
+
+
+/* DESKTOP */
+@media screen and (min-width: 992px) {
+
+    /* layout grid */
+    .layout-grid {
+        width: 100%;
+        height: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        height: 140px;
+    }
+
+    /* HEADER TOP */
+    header .header-border {
+        display: block;
+        border-bottom: 2px solid #f9aa01;
+    }
+
+    header .header-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+    }
+
+    header .header-top .contatos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 450px;
+
+        font-family: Inter;
+        font-size: 14px;
+    }
+
+    header .header-top .contatos>div {
+        display: flex;
+        gap: 10px;
+        width: 200px;
+    }
+
+    header .phone {
+        display: flex;
+        align-items: center;
+    }
+
+    header .email {
+        display: flex;
+        align-items: center;
+    }
+
+    header .sociais {
+        display: flex;
+        justify-content: space-between;
+
+        width: 117px;
+        height: 25px;
+    }
+
+    /* HEADER BOTTOM */
+    /* esconde os elementos desnecessários */
+    header .header-bottom .menu-hamburger,
+    header .header-bottom .menu-pontos,
+    header .header-bottom nav .phone,
+    header .header-bottom nav .email,
+    header .header-bottom nav .sociais {
+        display: none;
+    }
+
+
+    header .header-bottom nav {
+        position: static;
+        width: 440px;
+        height: 50px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        padding-bottom: 0;
+    }
+
+    header .header-bottom nav>a {
+        font-size: 14px;
+        border: none;
+        padding: 0;
+    }
+
+    header .header-bottom .logo {
+        width: 200px;
+    }
+
+    header .header-bottom .menu-usuario {
+        position: static;
+        width: 140px;
+        flex-direction: row;
+        height: auto;
+        background-color: transparent;
+        background-image: none;
+    }
+
+    /* alterar cor do link INICIO */
+    header .header-bottom #inicio {
+        color: #f9aa01;
+    }
+
+
+
+
+
+
+
+
+
+    /* main */
+
+    main {
+        margin-top: 0;
+    }
+
+    main .equipes-banner {
+        height: 1372px;
+        background-image: url(../assets/images/banner-equipe-desktop.png);
+    }
+
+    main .equipes-box {
+        width: 800px;
+        height: 530px;
+    }
+
+    main .equipes-title h1 {
+        font-size: 40px;
+    }
+
+    main .equipes-box .equipes-title .linha-title {
+        width: 390px;
+    }
+
+    form .formulario {
+        width: 565px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* FOOTER DESKTOP */
+    footer {
+        height: 520px;
+        background-image: url(../assets/images/footer-banner-desktop.png);
+    }
+
+    footer .all-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        padding-top: 102.02px;
+    }
+
+    footer .group-1 {
+        display: flex;
+        gap: 20px;
+    }
+
+    footer .group-2 {
+        display: flex;
+        gap: 18px;
+
+    }
+
+
+
+    /* LOGO E SOCIAIS */
+    footer .footer-para-social {
+        display: flex;
+        flex-direction: column;
+
+        width: 294px;
+    }
+
+    footer .footer-flex .footer-paragraph {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 41px;
+
+        padding-top: 0;
+    }
+
+    footer .footer-flex .footer-paragraph #logo-footer {
+        width: 196px;
+        height: 56.11px;
+
+    }
+
+    footer .footer-flex .footer-paragraph p {
+        font-family: quicksand;
+        font-size: 16px;
+        height: 87.17px;
+    }
+
+    footer .footer-flex .sociais {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 37.07px;
+
+        width: 206px;
+    }
+
+
+
+    /* LINKS UTEIS DESKTOP */
+    footer .footer-flex .links-uteis {
+        padding-top: 0;
+    }
+
+    footer .footer-flex .all-links {
+        display: flex;
+        flex-direction: column;
+        padding-top: 43px;
+        gap: 11.02px;
+    }
+
+
+
+    /* CONTATOS DESKTOP */
+
+    footer .footer-flex .contatos {
+        padding-top: 0;
+    }
+
+    footer .all-contatos {
+        display: flex;
+        flex-direction: column;
+        gap: 5.01px;
+    }
+
+
+
+    /* NEWSLETTER DESKTOP */
+    footer .footer-flex .newsletter {
+        padding-top: 0;
+    }
+    
+    footer .footer-flex .newsletter .newsletter-box form {
+        width: 285px;
+        height: 40.08px;
+    }
+    
+    footer .footer-flex .newsletter .newsletter-box button {
+        width: 285px;
+        height: 40.08px;
+    }
+
+    /* copyback */
+    footer .copy-back {
+        padding-top: 50px;
+        gap: 0;
+    }
+
 }
