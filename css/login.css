@@ -341,7 +341,7 @@ footer .footer-flex .all-links {
     padding-top: 43px;
     display: flex;
     flex-wrap: wrap;
-    gap: 48.34px;
+    gap: 12.78px 35.34px;
 }
 
 footer .footer-flex .links-uteis .links {

@@ -40,7 +40,6 @@
 .mostrar-menu {
     left: 0 !important;
 }
-
 /* -------------------- Mobile first ---------------------- */
 
 body {
@@ -158,35 +157,45 @@ header nav .phone,
 
 
 
+
+
+
 /* MAIN MOBILE */
+
 main {
     margin-top: 60px;
 }
 
-main .equipes-banner {
-    height: 1231px;
-    background-image: url(../assets/images/banner-cadastro-equipe-mobile.png);
+main .banner-jogadores {
+    height: 1403px;
+    background-image: url(../assets/images/banner-jogadores-mobile.png);
     background-size: cover;
 }
 
-
-
-/* CADASTRO EQUIPES */
-main .equipes-banner-flex {
-    height: 100%;
-    padding-top: 78px;
-
+main .banner-jogadores-flex {
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
-main .equipes-box {
+
+main .jogadores-margin {
+    padding-top: 78px;
+}
+
+main .jogadores-box {
     display: flex;
     flex-direction: column;
     align-items: center;
 
+
+
+    width: 335px;
+    height: 650px;
+
+    /* background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.6), rgba(60, 3, 65, 0.38)); */
     backdrop-filter: blur(10px);
+
 
     border: 2px solid transparent;
     background: 
@@ -194,47 +203,43 @@ main .equipes-box {
         linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.02)) border-box;
     border-image-slice: 1;
     border-radius: 8px;
-
-    width: 335px;
-    height: 492px;
 }
 
-main .equipes-box h1 {
+main .jogadores-box .jogadores-title {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    
+    padding-top: 27px;
+}
+
+main .jogadores-box .jogadores-title #jogadores-linha {
+    width: 250px;
+    border: 3px solid #f9aa01;
+    height: 0;
+}
+
+main .jogadores-box .jogadores-title h1 {
     font-family: titiliumweb;
     font-size: 28px;
+    width: 286px;
     text-transform: uppercase;
+    text-align: center;
 }
 
-main .equipes-box .equipes-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 9px;
-
-    padding-top: 40px;
-}
-
-main .equipes-box .equipes-title .linha-title {
-    width: 250px;
-    height: 0;
-    border: 3px solid #f9aa01;
-}
-
-
-
-
-/* FORMULARIO FLEXB */
 
 /* FORMULARIO*/
-#formulario-cadastro {
+#formulario-jogadores {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 31px;
+    gap: 24px;
 
-    padding-top: 90px;
+    padding-top: 84px;
 
 }
+
 
 form .formulario {
     display: flex;
@@ -253,7 +258,7 @@ form .formulario {
 
 }
 
-#formulario-cadastro input {
+#formulario-jogadores input {
     width: 100%;
     background-color: transparent;
     border: none;
@@ -262,29 +267,17 @@ form .formulario {
     font-family: titiliumwebregular;
 }
 
-#formulario-cadastro input::placeholder {
+#formulario-jogadores input::placeholder {
     color: white;
 }
 
-main .formulario-cadastro .select-image {
-    height: 40px;
-}
 
-input[type=file]::file-selector-button {
-    margin-right: 20px;
-    border: none;
-    background: #D9D9D9;
-    padding: 10px 10px;
-    border-radius: 8px;
-    color: black;
-    cursor: pointer;
-}
-
-main .equipes-box .botao-cadastrar {
+/* BOTAO CADASTRAR */
+main .botao-cadastrar {
     padding-top: 49px;
 }
 
-main .equipes-box .botao-cadastrar button {
+main .botao-cadastrar button {
     width: 273px;
     height: 40px;
 
@@ -295,6 +288,11 @@ main .equipes-box .botao-cadastrar button {
     font-family: titiliumwebbold;
     font-size: 24px;
 }
+
+
+
+
+
 
 
 
@@ -327,8 +325,7 @@ main .all-tabelas {
 
 main .tabela {
     font-family: titiliumwebbold;
-    font-size: 20px;
-    text-transform: uppercase;
+    font-size: 18px;
 
     height: 70px;
 
@@ -386,33 +383,33 @@ main .trash button {
 
 
 /* ESPAÇAMENTO CONTEÚDO TABELA MOBILE */
-main .id, .nome, .foto, .trash {
+main .id, .nome, .email, .trash {
     display: flex;
     align-items: center;
 }
 
 main .id {
-    padding-left: 20.16px;
+    padding-left: 8.16px;
     gap: 15.36px;
 }
 
 main .nome {
     padding-left: 23.04px;
-    gap: 53.76px;
+    gap: 22.64px;
 }
 
-main .foto {
-    padding-left: 16.32px;
-}
-
-main .foto img {
-    width: 47.04px;
-    height: 32px;
+main .email {
+    padding-left: 15.36px;
 }
 
 main .trash {
-    padding-left: 15.36px;
-    gap: 24.96px;
+    padding-left: 10.08px;
+    gap: 15.36px;
+}
+
+main .trash button img {
+    width: 15.36px;
+    height: 19px;
 }
 
 
@@ -424,7 +421,12 @@ main .trash {
 
 
 
-/* FOOTER */
+
+
+
+
+
+/* FOOTER MOBILE */
 footer {
     height: 1531px;
     background-image: url(../assets/images/background-footer.png);
@@ -618,6 +620,16 @@ footer #voltar-ao-topo {
 
 
 
+
+
+
+
+
+
+
+
+
+
 /* DESKTOP */
 @media screen and (min-width: 992px) {
 
@@ -729,94 +741,6 @@ footer #voltar-ao-topo {
     header .header-bottom #inicio {
         color: #f9aa01;
     }
-
-
-
-
-
-
-
-
-
-    /* main */
-
-    main {
-        margin-top: 0;
-    }
-
-    main .equipes-banner {
-        height: 1372px;
-        background-image: url(../assets/images/banner-equipe-desktop.png);
-    }
-
-    main .equipes-box {
-        width: 800px;
-        height: 530px;
-    }
-
-    main .equipes-title h1 {
-        font-size: 40px;
-    }
-
-    main .equipes-box .equipes-title .linha-title {
-        width: 390px;
-    }
-
-    form .formulario {
-        width: 565px;
-    }
-
-
-
-
-    /* TABELA */
-main #tabela-show {
-    display: none;
-}
-
-main .head-linha {
-    width: 800px;
-}
-
-    main .tabela-box {
-        width: 800px;
-    }
-
-    main .tabela-box .tabela-linha {
-        height: 81px;
-    }
-
-    main .tabela {
-        height: 125px;
-        font-size: 24px;
-    }
-
-    main .id {
-        gap: 58px;
-        padding-left: 45px;
-    }
-
-    main .nome {
-        gap: 239px;
-        padding-left: 58px;
-    }
-
-    main .foto {
-        padding-left: 50px;
-    }
-
-    main .foto img {
-        width: 90px;
-        height: 90px;
-    }
-
-    main .trash {
-        padding-left: 50px;
-        gap: 56px;
-    }
-
-
-
 
 
 

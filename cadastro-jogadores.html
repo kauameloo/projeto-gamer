@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Início - ProjetoGamer</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Jogadores - ProjetoGamer</title>
+    <link rel="stylesheet" href="css/jogadores.css">
 
 
 
@@ -101,7 +101,7 @@
             <img onclick="mostrarUsuario()" class="menu-pontos" src="assets/icons/Vectorpontos.svg" alt="menu 3 pontos">
 
             <div class="menu-usuario" id="menu3pt">
-                <a href="login.html">
+                <a href="">
                     <img src="assets/icons/perfil.svg" alt="icone de
                             perfil">
                 </a>
@@ -129,148 +129,161 @@
         }
     </script>
 
+
     <main>
-        <section class="banner">
-            <div class="layout-grid banner-flex">
-                <h1>Liga Gamers</h1>
-                <a href="">Sobre</a>
-            </div>
-        </section>
+        <div class="banner-jogadores">
+            <div class="layout-grid banner-jogadores-flex">
+                <div class="jogadores-margin">
+                    <div class="jogadores-box">
+                        <div class="jogadores-title">
+                            <div id="jogadores-linha"></div>
+                            <h1>Cadastro de Jogadores</h1>
+                        </div>
 
-        <section class="jogos">
-            <div class="layout-grid jogos-flex">
-                <img class="mais-popular" src="assets/images/fifa.png" alt="Jogo Fifa">
+                        <form id="formulario-jogadores" action="">
+                            <div class="formulario">
+                                <input type="text" placeholder="Digite o ID do jogador:">
+                            </div>
 
-                <img class="ultimo-jogo" src="assets/images/cs.png" alt="Jogo CS">
-            </div>
-        </section>
+                            <div class="formulario">
+                                <input type="search" placeholder="Selecione uma equipe:">
+                            </div>
 
-        <section class="info">
-            <div class="layout-grid info-flex">
-                <div class="info-title">
-                    <h1>Entre para o time pro gamer</h1>
-                    <div class="linha"></div>
+                            <div class="formulario">
+                                <input type="text" placeholder="Digite o nome do jogador:">
+                            </div>
+
+                            <div class="formulario">
+                                <input type="email" placeholder="Digite o e-mail do jogador:">
+                            </div>
+
+                            <div class="formulario">
+                                <input type="password" placeholder="Digite a senha:">
+                            </div>
+
+
+                        </form>
+                        <div class="botao-cadastrar">
+                            <button type="button">Cadastrar</button>
+                        </div>
+
+
+                        <div class="tabela-box">
+                            <div class="all-head">
+                                <div class="tabela-head">
+                                    <h2>ID</h2>
+                                    <h2>Nome</h2>
+                                    <h2>Email</h2>
+                                    <div class="separador"></div>
+                                </div>
+                                <div class="head-linha"></div>
+                            </div>
+        
+        
+                            <!-- TABELA -->
+                            <div class="all-tabelas">
+                                <div class="tabela">
+                                    <div class="id">
+                                        <h3>1</h3>
+                                        <div class="tabela-linha"></div>
+                                    </div>
+        
+                                    <div class="nome">
+                                        <h3>Kauã</h3>
+                                        <div class="tabela-linha"></div>
+                                    </div>
+        
+                                    <div class="email">
+                                        <p>kaua@gmail.com</p>
+                                    </div>
+        
+                                    <div class="trash">
+                                        <div class="tabela-linha"></div>
+                                        <button type="button"><img src="assets/icons/trash-icon.svg"
+                                                alt="icone de lixo" width="25px" height="25px"></button>
+                                    </div>
+                                </div>
+        
+                                <div class="tabela">
+                                    <div class="id">
+                                        <h3>1</h3>
+                                        <div class="tabela-linha"></div>
+                                    </div>
+        
+                                    <div class="nome">
+                                        <h3>Kauã</h3>
+                                        <div class="tabela-linha"></div>
+                                    </div>
+        
+                                    <div class="email">
+                                        <p>kaua@gmail.com</p>
+                                    </div>
+        
+                                    <div class="trash">
+                                        <div class="tabela-linha"></div>
+                                        <button type="button"><img src="assets/icons/trash-icon.svg"
+                                            alt="icone de lixo" width="25px" height="25px"></button>
+                                    </div>
+                                </div>
+        
+                                <div class="tabela">
+                                    <div class="id">
+                                        <h3>1</h3>
+                                        <div class="tabela-linha"></div>
+                                    </div>
+        
+                                    <div class="nome">
+                                        <h3>Kauã</h3>
+                                        <div class="tabela-linha"></div>
+                                    </div>
+        
+                                    <div class="email">
+                                        <p>kaua@gmail.com</p>
+                                    </div>
+        
+                                    <div class="trash">
+                                        <div class="tabela-linha"></div>
+                                        <button type="button"><img src="assets/icons/trash-icon.svg"
+                                            alt="icone de lixo" width="25px" height="25px"></button>
+                                    </div>
+                                </div>
+        
+                                <div id="tabela-show" class="tabela">
+                                    <div class="id">
+                                        <h3>1</h3>
+                                        <div class="tabela-linha"></div>
+                                    </div>
+        
+                                    <div class="nome">
+                                        <h3>Kauã</h3>
+                                        <div class="tabela-linha"></div>
+                                    </div>
+        
+                                    <div class="email">
+                                        <p>kaua@gmail.com</p>
+                                    </div>
+        
+                                    <div class="trash">
+                                        <div class="tabela-linha"></div>
+                                        <button type="button"><img src="assets/icons/trash-icon.svg"
+                                            alt="icone de lixo" width="25px" height="25px"></button>
+                                    </div>
+                                </div>
+                    </div>
                 </div>
 
-                <div class="cards">
-                    <div class="banner-card">
-                        <img id="jogos-diferentes-imagem" src="assets/images/kiljoy.png" alt="">
-                        <div class="card" id="jogos-diferentes">
-                            <img class="logo-card" src="assets/images/controle.png" alt="">
-                            <h2>20 jogos diferentes</h2>
-                            <p>São mais de 20 jogos em 2 plataformas dispóniveis para que você possa aprender melhores
-                                técnicas.</p>
-                        </div>
-                    </div>
-
-                    <div class="banner-card">
-                        <img id="professores-imagem" src="assets/images/jinx.png" alt="">
-                        <div class="card" id="professores">
-                            <img class="logo-card" src="assets/images/avatar.png" alt="">
-                            <h2>53 Professores</h2>
-                            <p>Temos 53 Proplayers no nosso time para ensinar todas as es- tratégias, você vai
-                                aprender do
-                                básico ao avançado.
-                                Tempo de treinamento, des- canso, equipamentos. </p>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </section>
-
-        <section class="noticias">
-            <div class="layout-grid noticias-flex">
-                <div class="noticias-title">
-                    <h1>Notícia</h1>
-                    <div id="noticias-linha"></div>
-                </div>
-
-                <div class="all-noticias-card">
-                    <div class="noticias-card">
-                        <img id="noticias-imagem" src="assets/images/noticia-variavel-1.png"
-                            alt="Imagem relacionada a notícia">
-                        <div class="noticias-conteudo">
-                            <h2>Titulo da Notícia</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since.</p>
-                        </div>
-                    </div>
-
-                    <div class="noticias-card">
-                        <img id="noticias-imagem" src="assets/images/noticia-variavel-2.png"
-                            alt="Imagem relacionada a notícia">
-                        <div class="noticias-conteudo">
-                            <h2>Titulo da Notícia</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since.</p>
-                        </div>
-                    </div>
-
-                    <div class="noticias-card">
-                        <img id="noticias-imagem" src="assets/images/noticia-variavel-3.png"
-                            alt="Imagem relacionada a notícia">
-                        <div class="noticias-conteudo">
-                            <h2>Titulo da Notícia</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since.</p>
-                        </div>
-                    </div>
-
-                    <div class="noticias-card">
-                        <img id="noticias-imagem" src="assets/images/noticia-variavel-4.png"
-                            alt="Imagem relacionada a notícia">
-                        <div class="noticias-conteudo">
-                            <h2>Titulo da Notícia</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since.</p>
-                        </div>
-                    </div>
-
-                    <div class="break"></div>
-
-                    <div class="noticias-card">
-                        <img id="noticias-imagem" src="assets/images/noticia-variavel-2.png"
-                            alt="Imagem relacionada a notícia">
-                        <div class="noticias-conteudo">
-                            <h2>Titulo da Notícia</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since.</p>
-                        </div>
-                    </div>
-
-                    <div class="noticias-card">
-                        <img id="noticias-imagem" src="assets/images/noticia-variavel-4.png"
-                            alt="Imagem relacionada a notícia">
-                        <div class="noticias-conteudo">
-                            <h2>Titulo da Notícia</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since.</p>
-                        </div>
-                    </div>
-
-                    <div class="noticias-card">
-                        <img id="noticias-imagem" src="assets/images/noticia-variavel-1.png"
-                            alt="Imagem relacionada a notícia">
-                        <div class="noticias-conteudo">
-                            <h2>Titulo da Notícia</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since.</p>
-                        </div>
-                    </div>
-
-                    <div class="noticias-card">
-                        <img id="noticias-imagem" src="assets/images/noticia-variavel-3.png"
-                            alt="Imagem relacionada a notícia">
-                        <div class="noticias-conteudo">
-                            <h2>Titulo da Notícia</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
     </main>
+
+
+
+
+
+
+
+
+
 
     <footer>
         <div class="layout-grid footer-flex">
@@ -287,17 +300,17 @@
                         <div class="sociais">
                             <a href="">
                                 <img src="assets/icons/icone_facebook_footer.svg" alt="icone link
-                            do facebook da empresa">
+                        do facebook da empresa">
                             </a>
 
                             <a href="">
                                 <img src="assets/icons/icone_linkedin_footer.svg" alt="Icone link
-                            do linkedin da empresa">
+                        do linkedin da empresa">
                             </a>
 
                             <a href="">
                                 <img src="assets/icons/icone_intagram_footer.svg" alt="Icone
-                            link do instagram da empresa">
+                        link do instagram da empresa">
                             </a>
                         </div>
                     </div>
@@ -386,10 +399,10 @@
                 </div>
             </div>
 
+
         </div>
 
     </footer>
-
 
 </body>
 
