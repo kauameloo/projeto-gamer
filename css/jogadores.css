@@ -747,6 +747,97 @@ footer #voltar-ao-topo {
 
 
 
+    /* MAIN DESKTOP */
+    main {
+        margin-top: 0;
+    }
+
+
+    /* FORMULARIOS */
+    main .banner-jogadores {
+        background-image: url(../assets/images/banner-jogadores-desktop.png);
+    }
+
+    main .jogadores-box {
+        width: 800px;
+        height: 670px;
+    }
+
+    main .jogadores-box .jogadores-title #jogadores-linha {
+        width: 448px;
+    }
+
+    main .jogadores-box .jogadores-title h1 {
+        font-size: 40px;
+        width: auto;
+    }
+
+    form .formulario {
+        width: 565px;
+    }
+
+    main .botao-cadastrar button {
+        width: 243px;
+    }
+
+    #formulario-jogadores {
+        gap: 39px;
+    }
+
+
+
+
+    /* TABELA DESKTOP */
+    main #tabela-show {
+        display: none;
+    }
+
+    main .tabela-box {
+        width: 800px;
+    }
+
+    main .head-linha {
+        width: 800px;
+    }
+
+    main .tabela {
+        height: 125px;
+        font-size: 24px;
+    }
+
+    main .tabela-box .tabela-linha {
+        height: 81px;
+    }
+
+    main .id {
+        padding-left: 33px;
+        gap: 20px;
+    }
+
+    main .nome {
+        padding-left: 58px;
+        gap: 252px;
+    }
+
+    main .email {
+        padding-left: 27px;
+    }
+
+    main .trash {
+        padding-left: 37px;
+        gap: 56px;
+    }
+
+    main .trash button img {
+        width: 25px;
+        height: 25px;
+    }
+
+
+
+
+
+
 
 
     /* FOOTER DESKTOP */
